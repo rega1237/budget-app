@@ -12,7 +12,6 @@ RSpec.describe Group, type: :model do
 
   context 'When testing the User class' do
     it 'should contain an name' do
-      p @group
       expect(@group.name).to eq('grocery')
     end
 
