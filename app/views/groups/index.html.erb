@@ -1,0 +1,8 @@
+<% @groups.includes([:expenses]).each do |group| %>
+  <% @total = 0 %>
+  <h3><%= link_to group.name, group_path(group) %></h3>
+  <% group.expenses.each do |expense| %>
+    <% @total += expense.amount %>
+  <% end %>
+  <%= @total %>
+<% end %>

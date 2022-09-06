@@ -1,0 +1,11 @@
+<p>Total spending for <%= @group.name %>:
+  <%@sum=0%>
+  <% @expenses.each do |expense| %>
+    <% @sum = @sum + expense.amount %>
+  <%end%>
+  $<%= @sum %>
+</p>
+<% @expenses.each do |expense| %>
+ <p> <%= expense.name %> </p>
+ <p> <%= expense.amount %> </p>
+<% end %>
