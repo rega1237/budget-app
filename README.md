@@ -27,7 +27,7 @@ To get a local copy up and running follow these simple steps:
 - Type these commands into the terminal:
 
 ```
-git clone https://github.com/rbanos-mv/rails-recipe-app.git
+git clone https://github.com/rega1237/budget-app
 cd rails-recipe-app
 bundle install
 ```
