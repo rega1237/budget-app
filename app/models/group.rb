@@ -1,5 +1,5 @@
 class Group < ApplicationRecord
-  has_many :classifies
+  has_many :classifies, dependent: :destroy
   has_many :expenses, through: :classifies
   belongs_to :author, class_name: 'User', foreign_key: 'author_id'
 
