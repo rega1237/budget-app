@@ -1,5 +1,9 @@
 ![](./app/assets/images/logo.png)
 
+# Demo
+
+https://spendless-rails.herokuapp.com/
+
 # Spendless app
 
 > The Spendless app keeps track of all your spends by groups, expenses, and show you the total by group. It will allow you to save categories of spends, keep track of what you spent, create expenses, and generate the total based on what you have in that category.
