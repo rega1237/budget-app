@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   # root "articles#index"
   root to: "splash#index"
 
-  resources :groups
-  resources :expenses
-
+  resources :groups, only: [:index, :show, :create, :new] do
+    resources :expenses, only: [:new, :create]
+  end
 end
