@@ -36,14 +36,14 @@ user4.password_confirmation = 'valido'
 user4.confirm
 user4.save
 
-group0 = Group.create(name: 'Groceries', icon: 'icon here', author_id: user0.id)
-group1 = Group.create(name: 'House', icon: 'icon here', author_id: user0.id)
-group2 = Group.create(name: 'Car', icon: 'icon here', author_id: user0.id)
-group3 = Group.create(name: 'Work', icon: 'icon here', author_id: user1.id)
-group4 = Group.create(name: 'Party of my son', icon: 'icon here', author_id: user1.id)
-group5 = Group.create(name: 'school', icon: 'icon here', author_id: user2.id)
-group6 = Group.create(name: 'vacation', icon: 'icon here', author_id: user3.id)
-group7 = Group.create(name: 'party', icon: 'icon here', author_id: user4.id)
+group0 = Group.create(name: 'Groceries', icon: 'https://metro.co.uk/wp-content/uploads/2022/05/SEC_105299519.jpg?quality=90&strip=all', author_id: user0.id)
+group1 = Group.create(name: 'House', icon: 'https://s3.amazonaws.com/timeinc-houseplans-v2-production/region/images/539/original/Adaptive_Cottage_front_resize.jpg?1657733110', author_id: user0.id)
+group2 = Group.create(name: 'Car', icon: 'https://upload.wikimedia.org/wikipedia/commons/6/60/Corsa_sport_2004.jpg', author_id: user0.id)
+group3 = Group.create(name: 'Work', icon: 'https://www.colliers.com/-/media/images/colliers/asia/philippines/colliers-review/collierreview_hero_image_01312022_v2/hero_image_tondominium/hero_image_021522/hero_image_colliersviewpoint_022222.ashx?bid=0f5b3ed2a8de41f89e1a8d557e48f9f8', author_id: user1.id)
+group4 = Group.create(name: 'Party of my son', icon: 'https://www.parents.com/thmb/F438STCK-a2v9991mZ-6woZps4c=/1800x1012/smart/filters:no_upscale()/GettyImages-543767951-88c15f8f45244907abe5a2013e9f260d.jpg', author_id: user1.id)
+group5 = Group.create(name: 'school', icon: 'https://economictimes.indiatimes.com/thumb/msid-77391367,width-1200,height-900,resizemode-4,imgsize-677864/to-reduce-risk-experts-say-schools-should-make-adjustments-when-resuming-in-person-classes-.jpg?from=mdr', author_id: user2.id)
+group6 = Group.create(name: 'vacation', icon: 'https://upload.wikimedia.org/wikipedia/commons/c/cb/Playa_Punto_Fijo.jpg', author_id: user3.id)
+group7 = Group.create(name: 'party', icon: 'https://www.preferente.com/wp-content/uploads/2022/08/riu-party-1.jpg', author_id: user4.id)
 
 expense0 = Expense.create(name: 'Vegetables', amount: 15.30, author_id: user0.id)
 expense1 = Expense.create(name: 'Milk', amount: 1.5, author_id: user0.id)
