@@ -30,14 +30,17 @@
         </ul>
       </div>
     <% end %>
+  
   <div class="field width-100">
     <%= form.label :name, hidden: true %>
     <%= form.text_field :name, placeholder: 'Name', required: true %>
   </div>
+  
   <div class="field width-100">
     <%= form.label :amoutn, hidden: true %>
     <%= form.number_field :amount, placeholder: 'Amount', required: true %>
   </div>
+  
   <div class="selections">
     <%@groups.each do |group|%>
       <div class="selection">
@@ -46,9 +49,10 @@
       </div>
     <%end%>
   </div>
-</div>
-<div class="actions">
-  <%= form.submit %>
-</div>
-<% end %>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+
+  <% end %>
 </div>
