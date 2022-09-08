@@ -5,7 +5,7 @@ class ApplicationController < ActionController::Base
   def redirect_to_splash
     redirect_to root_path unless user_signed_in?
   end
-  
+
   protected
 
   def update_allowed_parameters

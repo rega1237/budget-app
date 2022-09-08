@@ -19,7 +19,7 @@ class ExpensesController < ApplicationController
       redirect_to @group
     else
       redirect_to new_group_payment_path(@group), flash: { alert: 'You must select at least one category.' }
-      return
+      nil
     end
   end
 

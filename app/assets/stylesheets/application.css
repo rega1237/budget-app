@@ -14,7 +14,7 @@
  *= require_self
  */
 
- @font-face {
+@font-face {
   font-family: 'novabold';
   src: url("fonts/Proxima-Nova-Bold.otf");
 }
@@ -36,6 +36,30 @@
   --green: #5fb523;
   --white: whitesmoke;
   --text: #434b54;
+}
+
+a {
+  text-decoration: none;
+  color: var(--blue);
+}
+
+footer {
+  background-color: var(--green);
+  padding: 30px 10px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+}
+
+footer a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  border: solid white 1px;
+  padding: 20px;
+  width: 100%;
 }
 
 nav {
@@ -79,11 +103,6 @@ nav li a {
   flex: 1 1;
 }
 
-a {
-  text-decoration: none;
-  color: var(--blue);
-}
-
 .group-container {
   display: flex;
   background-color: white;
@@ -106,6 +125,11 @@ a {
   margin-left: 10px;
 }
 
+.back-white a {
+  color: var(--white);
+  font-size: 1em;
+}
+
 .group-name h3 a {
   font-size: 20px;
   color: var(--text);
@@ -117,25 +141,6 @@ a {
   padding-top: 10px;
 }
 
-footer {
-  background-color: var(--green);
-  padding: 30px 10px;
-  position: fixed;
-  width: 100%;
-  bottom: 0;
-  left: 0;
-  text-align: center;
-}
-
-footer a {
-  display: inline-block;
-  text-decoration: none;
-  color: white;
-  border: solid white 1px;
-  padding: 20px;
-  width: 100%;
-}
-
 .back {
   display: inline-block;
   color: var(--blue);
@@ -144,11 +149,6 @@ footer a {
 
 .back-white {
   justify-self: flex-start;
-}
-
-.back-white a {
-  color: var(--white);
-  font-size: 1em;
 }
 
 .expense {
@@ -193,14 +193,13 @@ footer a {
   padding: 10px;
   width: 100%;
   font-size: 1em;
-
 }
 
 form {
   margin-top: -20px;
 }
 
-.form-image img{
+.form-image img {
   width: 50%;
 }
 
