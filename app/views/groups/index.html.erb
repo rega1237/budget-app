@@ -1,0 +1,25 @@
+<%= render "shared/nav" %>
+<div class="mobile-container">
+<div class="fill">
+<% @groups.includes([:expenses]).each do |group| %>
+  <div class="group-container">
+    <% @total = 0 %>
+    <div class="group-icon">
+      <img src="<%= group.icon %>">
+    </div>
+    <div class="group-name">
+      <h3><%= link_to group.name, group_path(group) %></h3>
+    </div>
+    <div class="group-total">
+      <% group.expenses.each do |expense| %>
+        <% @total += expense.amount %>
+      <% end %>
+    <p> $<%= @total %> </p>
+    </div>
+  </div>
+<% end %>
+  <footer>
+    <p><%= link_to "New Category", new_group_path%></p>
+  </footer>
+</div>
+</div>

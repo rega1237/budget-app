@@ -4,6 +4,9 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "articles#index"
-  root to: "home#index"
+  root to: "splash#index"
 
+  resources :groups, only: [:index, :show, :create, :new] do
+    resources :expenses, only: [:new, :create]
+  end
 end
