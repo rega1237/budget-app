@@ -28,7 +28,7 @@ To get a local copy up and running follow these simple steps:
 
 ```
 git clone https://github.com/rega1237/budget-app
-cd rails-recipe-app
+cd budget-app
 bundle install
 ```
 
