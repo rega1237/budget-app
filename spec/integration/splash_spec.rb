@@ -1,7 +1,6 @@
 require 'rails_helper'
 
 RSpec.describe 'Splash', type: :feature do
-
   describe 'Splash#index page:' do
     before(:each) do
       visit root_path
@@ -22,7 +21,7 @@ RSpec.describe 'Splash', type: :feature do
     context 'when click on recipe name' do
       it 'shows the page header' do
         first(:link_or_button, 'Sign Up').click
-  
+
         expect(page).to have_current_path new_user_registration_path
       end
     end

@@ -1,5 +1,5 @@
 require 'rails_helper'
-require_relative './shared_file.rb'
+require_relative './shared_file'
 
 RSpec.describe 'Groups', type: :feature do
   include_context 'request_context'
@@ -53,7 +53,9 @@ RSpec.describe 'Groups', type: :feature do
   describe 'group#show page:' do
     context 'when click button' do
       let(:group) do
-        Group.create(name: 'Phone', icon: 'https://img.freepik.com/free-psd/phone-screen-mockup_53876-76354.jpg?w=2000', author_id: user.id)
+        Group.create(name: 'Phone',
+                     icon: 'https://img.freepik.com/free-psd/phone-screen-mockup_53876-76354.jpg?w=2000',
+                     author_id: user.id)
       end
       before(:each) do
         visit group_path(group.id)
@@ -70,7 +72,9 @@ RSpec.describe 'Groups', type: :feature do
   describe 'expenses#new page:' do
     context 'when form is filled' do
       let(:group) do
-        Group.create(name: 'Phone', icon: 'https://img.freepik.com/free-psd/phone-screen-mockup_53876-76354.jpg?w=2000', author_id: user.id)
+        Group.create(name: 'Phone',
+                     icon: 'https://img.freepik.com/free-psd/phone-screen-mockup_53876-76354.jpg?w=2000',
+                     author_id: user.id)
       end
       before(:each) do
         visit new_group_expense_path(group.id)
