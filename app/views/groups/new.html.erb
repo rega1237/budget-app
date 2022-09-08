@@ -1,14 +1,22 @@
-  <h1>New Category</h1> 
+<%= render "shared/nav" %>
+<div class="logo-container form-image">
+  <img src="../../assets/logo.png">
+</div>
+
+<div class="form-container"> 
   <%= form_with model: @group do |form|%>
-    <div>
-      <%= form.label :name%> <br>
-      <%= form.text_field :name%>
+    <div class="field width-100">
+      <%= form.label :name, hidden: true %>
+      <%= form.text_field :name, placeholder: 'Group name'%>
     </div>
 
-    <div>
-      <%= form.label :icon%> <br>
-      <%= form.text_field :icon%>
+    <div class="field width-100">
+      <%= form.label :icon, hidden: true %>
+      <%= form.text_field :icon, placeholder: 'Link to icon'%>
     </div>
-  
+
+    <div class="actions">
     <%= form.submit%>
+    </div>
   <%end%>
+</div>
