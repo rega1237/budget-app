@@ -1,0 +1,22 @@
+<%= render "shared/nav" %>
+<div class="mobile-container">
+  <p><strong><%= link_to "< Back", groups_path, class: "back" %></strong></p>
+  <p>Total spending for <%= @group.name %>:
+  <strong><%@sum=0%>
+  <% @expenses.each do |expense| %>
+    <% @sum = @sum + expense.amount %>
+  <%end%>
+  $<%= @sum %>
+  </p></strong>
+  <% @expenses.each do |expense| %>
+  <div class="expense">
+    <div>
+    <p> <%= expense.name %> </p>
+    </div>
+    <strong><p> $<%= expense.amount %> </p></strong>
+  </div>
+  <% end %>
+  <footer>
+    <p><%= link_to "New Expense", new_group_expense_path(@group)%></p>
+  </footer>
+</div>
