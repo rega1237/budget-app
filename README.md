@@ -34,8 +34,9 @@ To get a local copy up and running follow these simple steps:
 git clone https://github.com/rega1237/budget-app
 cd budget-app
 bundle install
+bundle exec figaro install
 ```
-
+- The bundle exec figaro install is to install and create the `application.yml` file and create the environment variables
 - You will need to configure your  `application.yml` file before you install and run the project. The `application.yml` file contains environment variables needed to deploy the webpage. You can find this file in the folder config/application.yml. There is a commented `application_example.txt` file you can use as a guide to configure your own.
 
 - Edit file application.yml
