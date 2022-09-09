@@ -91,6 +91,7 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - [Microverse](https://www.microverse.org/) for the motivation.
+- Original design idea by [Gregoire Vella](https://www.behance.net/gregoirevella)
 
 ## 📝 License
 
