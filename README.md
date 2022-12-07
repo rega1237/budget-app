@@ -2,7 +2,7 @@
 
 # Demo
 
-https://spendless-rails.herokuapp.com/
+https://spendless.onrender.com/
 
 # Spendless app
 
