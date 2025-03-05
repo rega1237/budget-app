@@ -24,13 +24,11 @@ user2.save
 user3 = User.create(name: 'Maria', email: 'mario@mail.com')
 user3.password = 'valido'
 user3.password_confirmation = 'valido'
-user3.confirm
 user3.save
 
 user4 = User.create(name: 'Pedro', email: 'pedro@mail.com')
 user4.password = 'valido'
 user4.password_confirmation = 'valido'
-user4.confirm
 user4.save
 
 group0 = Group.create(name: 'Groceries', icon: 'https://metro.co.uk/wp-content/uploads/2022/05/SEC_105299519.jpg?quality=90&strip=all', author_id: user0.id)
