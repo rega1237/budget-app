@@ -9,19 +9,16 @@
 user0 = User.create(name: 'Rafael', email: 'rafael@mail.com')
 user0.password = 'valido'
 user0.password_confirmation = 'valido'
-user0.confirm
 user0.save
 
 user1 = User.create(name: 'Olga', email: 'olga@mail.com')
 user1.password = 'valido'
 user1.password_confirmation = 'valido'
-user1.confirm
 user1.save
 
 user2 = User.create(name: 'Luis', email: 'luis@mail.com')
 user2.password = 'valido'
 user2.password_confirmation = 'valido'
-user2.confirm
 user2.save
 
 user3 = User.create(name: 'Maria', email: 'mario@mail.com')
